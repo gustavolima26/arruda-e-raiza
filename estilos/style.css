@@ -27,65 +27,70 @@ html {
     height: 100%;
 }
 
-header {
-    background: url(../imagens/background.png) no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh; 
-}
-
-header .container {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(245, 245, 245, 0.960);
-}
-
-header .overlay {
+.cabecalho {
+    position: relative;
+    height: 120px;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     padding: 30px;
+    z-index: 2;
+    background-color: rgb(245, 245, 245, 0.960);
 }
 
-header .overlay p {
+.cabecalho p {
     display: none;
 }
 
-header nav {
-    display: flex;
-    gap: 40px;
-}
-
-header a {
+.cabecalho a {
+    display: inline-block;
+    width: 105px;
+    margin: 8px;
+    padding: 20px;
     text-decoration: none;
-    color: var(--cor-font);
-    font-family: var(--fonte-principal);
-    font-size: 1em;
-}
-
- header .texto-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    height: calc(100vh - 140px);
     text-align: center;
-    color: var(--cor-font);
 }
 
-.texto-header h1 {
-    width: 90%;
+.background_header {
+    position: absolute;
+    min-height: 490px;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    z-index: 0;
+    background: var(--cor-primaria) url(../imagens/background.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.overlay_header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 370px;
+    height: calc(100vh - 120px);
+    z-index: 1;
+    background-color: rgb(245, 245, 245, 0.960);
+}
+
+.texto_principal_header {
+    color: var(--cor-font);
+    text-align: center;
+}
+
+.texto_principal_header h1 {
+    max-width: 80vw;
     font-family: var(--fonte-destaque);
     font-size: 3.3em;
 }
 
-.texto-header p {
-    max-width: 1200px;
-    width: 80%;
+.texto_principal_header p {
+    max-width: 80vw;
     font-family: var(--fonte-principal);
     font-size: 1.3em;
     line-height: 30px;
-}  
+}
 
  section {
     height: 500px;
