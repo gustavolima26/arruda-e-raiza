@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            
+        }
+
+        .cabecalho {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;          
+            height: 80px;
+            z-index: 3;           
+        }
+
+        .background {
+            background: url(./imagens/background.png) no-repeat center center;
+            
+            position: absolute;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .overlay {
+            background-color: rgba(219, 199, 199, 0.486);
+            position: absolute;
+            top: 0;
+            height: 100vh;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .overlay div {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .overlay h1 {
+            font-size: 3em !important;
+        }
+
+        .overlay h1, p {
+            max-width: 800px;
+            font-size: 1.4em;
+            text-align: center;
+        }
+
+        #conteudo1 {
+            margin-top: calc(100vh - 120px);
+        }
+
+        .conteudo {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <img src="imagens/logo.png" alt="">
+            <nav>
+                <a href="#">#####</a>
+                <a href="#">#####</a>
+                <a href="#">#####</a>
+                <a href="#">#####</a>
+            </nav>
+        </div>
+        <div class="background">
+        </div>
+        <div class="overlay">
+            <div>
+                <h1>Teste de responsividade</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolores et illo facilis labore alias architecto, qui provident esse possimus. Sapiente optio, sit ut ipsam temporibus ex quos fugiat recusandae?</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="conteudo" id="conteudo1" style="background-color: yellow;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus at, explicabo earum, tempore soluta maiores esse minima consequatur laboriosam nam praesentium quia sit inventore repellat amet laborum maxime eum vero! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis nisi corrupti architecto explicabo dolores. Recusandae reiciendis laboriosam veniam? Dolor pariatur dolores voluptates. Laboriosam error a distinctio officia laborum pariatur perspiciatis.</p>
+        </div>
+        <div class="conteudo" style="background-color: rgb(17, 0, 255);">
+            
+        </div>
+        <div class="conteudo" style="background-color: yellow;">
+            
+        </div>
+        <div class="conteudo" style="background-color: rgb(9, 255, 0);">
+            
+        </div>
+    </main>
+</body>
+</html>
