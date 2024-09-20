@@ -15,7 +15,7 @@
     .cabecalho p {
         display: block;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 80px;
         font-family: 'BOOWIE', sans-serif;
         font-size: clamp(24px, 10vw, 60px);
         background: radial-gradient(ellipse, #faec9f, #caa840); 
