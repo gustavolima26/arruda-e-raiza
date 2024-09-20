@@ -35,6 +35,7 @@
 
     .texto_principal_header {
         display: block;
+        margin-bottom: 50px;
     }
 
     .texto_principal_header h1 {
