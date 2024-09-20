@@ -55,5 +55,10 @@
     .balloon {
         width: 65px;
         height: 65px;
+        background: #25d366 url(../imagens/botao-flutuante-wp-mobile.svg);
+    }
+
+    .balloon:hover {
+        background: #25d366 url(../imagens/logo-botao-flutuante-mobile.png);
     }
 } 
