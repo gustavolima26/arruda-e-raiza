@@ -14,7 +14,7 @@
 
     .cabecalho p {
         display: block;
-        margin: auto;
+        text-align: center;
         padding-top: 20px;
         font-family: 'BOOWIE', sans-serif;
         font-size: clamp(24px, 10vw, 60px);
@@ -42,6 +42,7 @@
         margin: auto;
         padding-bottom: 20px;
         font-size: clamp(28px, 6vw, 40px);
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.300);
     }
 
     .texto_principal_header p {
@@ -49,5 +50,10 @@
         font-size: clamp(16px, 5vw, 24px);
         text-align: justify;
         line-height: 22px;
+    }
+
+    .balloon {
+        width: 65px;
+        height: 65px;
     }
 } 

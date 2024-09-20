@@ -27,13 +27,12 @@ html {
     height: 100%;
 }
 
+/* Cabeçalho */
+
 .cabecalho {
     position: relative;
     height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
+    padding: 0px 30px;
     z-index: 2;
     background-color: rgb(245, 245, 245, 0.960);
 }
@@ -42,14 +41,37 @@ html {
     display: none;
 }
 
+.cabecalho img {
+    position: fixed;
+    left: 20px;
+}
+
+.cabecalho nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .cabecalho a {
     display: inline-block;
-    width: 105px;
-    margin: 8px;
-    padding: 20px;
+    width: 100px;
+    margin: 0px 15px;
+    padding: 20px 0px;
     text-decoration: none;
     text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 1.2em;
+    color: var(--cor-font);
 }
+
+.cabecalho > nav a:hover {
+    color: #131313;
+    cursor: pointer;
+    text-decoration: underline;
+    transform: translate(-2px, -2px);
+    transition: transform 0.3s ease;
+}
+
+/* Background do Header */
 
 .background_header {
     position: absolute;
@@ -61,6 +83,8 @@ html {
     background: var(--cor-primaria) url(../imagens/background.png) no-repeat center center fixed;
     background-size: cover;
 }
+
+/* Overlay do background no Header */
 
 .overlay_header {
     display: flex;
@@ -74,15 +98,31 @@ html {
     background-color: rgb(245, 245, 245, 0.960);
 }
 
+/* Texto principal do Header */
+
+
 .texto_principal_header {
     color: var(--cor-font);
     text-align: center;
+    /* Efeito texto principal */
+    opacity: 0;
+    transform: translateY(-10px); 
+    animation: surgir 2s ease forwards;
 }
+
+@keyframes surgir {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Fim do efeito */
 
 .texto_principal_header h1 {
     max-width: 80vw;
     font-family: var(--fonte-destaque);
     font-size: 3.3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.300);
 }
 
 .texto_principal_header p {
@@ -91,6 +131,57 @@ html {
     font-size: 1.3em;
     line-height: 30px;
 }
+
+/* Balão flutuante WhatsApp */
+
+.balloon-container {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 78vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;    
+}
+
+.balloon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+    z-index: 5;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.281);
+}
+
+.balloon:hover {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    border-radius: 50%;
+}
+
+.front {
+    background-color: #25D366;
+}
+
+.back {
+    
+    transform: rotateY(180deg);
+    margin-top: 6px;
+} 
+/* Sessões */
 
  section {
     height: 500px;
@@ -111,6 +202,8 @@ html {
 .section4 {
     background-color: #fbf5d4;
 }
+
+/* Rodapé */
 
 footer {
     background-color: var(--cor-secundaria);

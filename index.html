@@ -7,12 +7,16 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-querie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="cabecalho">
+        <div class="cabecalho" id="cabecalho">
+            <!-- Cabeçalho Mobile -->
             <p>ARRUDA E RAIZA</p>
-            <img src="imagens/logo.png" alt="Logo Arruda e Raiza">
+            <!-- Icone fixo link detorno inicio da página -->
+            <a href="#cabecalho"><img src="imagens/logo.png" alt="Logo Arruda e Raiza"></a>
+            <!-- Menu de navegação na página -->
                 <nav>
                     <a href="#">Home</a>
                     <a href="#">Produto</a>
@@ -20,17 +24,35 @@
                     <a href="#">Sobre nós</a>
                 </nav>
         </div>
-        <div class="background_header">
-
-        </div>
+        <!-- Background Header -->
+        <div class="background_header"></div>
+        <!-- Overlay do Background -->
         <div class="overlay_header">
+            <!-- Texto principal do Header -->
             <div class="texto_principal_header">
                 <h1>Auxílio doença e Auxilio Acidente</h1>
                     <p>Você sabia que tem direitos que podem garantir sua segurança e proteção em casos de doença ou acidente? Descubra como nosso advogado especializado em auxílio doença e auxílio acidente pode ajudá-lo a acessar esses benefícios. Clique aqui para obter a assistência jurídica que você merece e conheça seus direitos agora mesmo!</p>
             </div>
+            <!-- Balão flutuante WhatsApp -->
+            <div class="balloon-container">
+                <a href="">
+                    <div class="balloon">
+                        <div class="front">
+                        <i class="fa-brands fa-whatsapp fa-fade" style="color: #ffffff; animation-duration: 3s;"></i>
+                        </div>
+                        <div class="back">
+                            <picture>
+                                <source media="(max-width: 655px)" srcset="imagens/logo-botao-flutuante-mobile.png" type="image/png">
+                                <img src="imagens/logo-botao-flutuante.png" alt="Logo para balão flutuante">
+                            </picture>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </header>
     <main>
+        <!-- Sessões -->
         <section class="section1">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolores eveniet nisi est numquam ab ipsa molestias sit libero qui minima aperiam, vero temporibus voluptatum ut adipisci expedita tempore beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni excepturi praesentium, perferendis dolor est neque aspernatur aperiam et optio nobis eius nostrum labore expedita tempora natus, explicabo maiores sint amet!</p>
         </section>
@@ -44,31 +66,9 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolores eveniet nisi est numquam ab ipsa molestias sit libero qui minima aperiam, vero temporibus voluptatum ut adipisci expedita tempore beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni excepturi praesentium, perferendis dolor est neque aspernatur aperiam et optio nobis eius nostrum labore expedita tempora natus, explicabo maiores sint amet!</p>
         </section>
     </main>
+    <!-- Rodapé -->
     <footer>
         <p>CopyRight</p>
     </footer>
 </body>
 </html>
-
-
-
-
-
-<!-- <header>
-        <div class="container">
-            <div class="overlay">
-                <p>ARRUDA E RAIZA</p>
-                <img src="imagens/logo.png" alt="Logo Arruda e Raiza">
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Produto</a>
-                    <a href="#">Contato</a>
-                    <a href="#">Sobre nós</a>
-                </nav>
-            </div>
-            <div class="texto-header">
-                <h1>Auxílio doença e Auxilio Acidente</h1>
-                <p>Você sabia que tem direitos que podem garantir sua segurança e proteção em casos de doença ou acidente? Descubra como nosso advogado especializado em auxílio doença e auxílio acidente pode ajudá-lo a acessar esses benefícios. Clique aqui para obter a assistência jurídica que você merece e conheça seus direitos agora mesmo!</p>
-            </div>
-        </div>
-    </header> -->
