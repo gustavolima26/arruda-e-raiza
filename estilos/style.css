@@ -141,46 +141,28 @@ html {
     height: 78vh;
     justify-content: flex-end;
     align-items: flex-end;
-    padding: 20px;    
+    padding: 20px;
+    
+}
+
+.container_balloon {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 99%;
+    height: 74%;
 }
 
 .balloon {
+    position: relative;
     width: 100px;
     height: 100px;
-    position: relative;
-    transition: transform 1.5s;
-    transform-style: preserve-3d;
-    z-index: 5;
     border-radius: 50%;
     box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.281);
+    background-color: var(--cor-whats);
 }
 
-.balloon:hover {
-    transform: rotateY(180deg);
-}
-
-.front, .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    color: white;
-    border-radius: 50%;
-}
-
-.front {
-    background-color: #25D366;
-}
-
-.back {
-    
-    transform: rotateY(180deg);
-    margin-top: 6px;
-} 
 /* Sessões */
 
  section {
