@@ -27,6 +27,16 @@ html {
     height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fonte-destaque);
+    color: var(--cor-font);
+}
+
+p {
+    font-family: var(--fonte-principal);
+    color: var(--cor-font);
+}
+
 /* Cabeçalho */
 
 .cabecalho {
@@ -34,7 +44,7 @@ html {
     height: 120px;
     padding: 0px 30px;
     z-index: 2;
-    background-color: rgb(245, 245, 245, 0.960);
+    background-color: rgba(230, 230, 230, 0.920);
 }
 
 .cabecalho p {
@@ -58,9 +68,7 @@ html {
     padding: 20px 0px;
     text-decoration: none;
     text-align: center;
-    font-family: var(--fonte-principal);
     font-size: 1.2em;
-    color: var(--cor-font);
 }
 
 .cabecalho > nav a:hover {
@@ -69,6 +77,10 @@ html {
     text-decoration: underline;
     transform: translate(-2px, -2px);
     transition: transform 0.3s ease;
+}
+
+.cabecalho > nav a:visited {
+    color: #131313;
 }
 
 /* Background do Header */
@@ -95,14 +107,13 @@ html {
     min-height: 370px;
     height: calc(100vh - 120px);
     z-index: 1;
-    background-color: rgb(245, 245, 245, 0.960);
+    background-color: rgba(230, 230, 230, 0.920);
 }
 
 /* Texto principal do Header */
 
 
 .texto_principal_header {
-    color: var(--cor-font);
     text-align: center;
     /* Efeito texto principal */
     opacity: 0;
@@ -116,18 +127,16 @@ html {
         transform: translateY(0);
     }
 }
-/* Fim do efeito */
+    /* Fim do efeito */
 
 .texto_principal_header h1 {
     max-width: 80vw;
-    font-family: var(--fonte-destaque);
     font-size: 3.3em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.300);
 }
 
 .texto_principal_header p {
     max-width: 80vw;
-    font-family: var(--fonte-principal);
     font-size: 1.3em;
     line-height: 30px;
 }
@@ -136,20 +145,11 @@ html {
 
 .container_balloon {
     position: fixed;
-    bottom: 60px;
+    bottom: 20px;
     right: 20px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-}
-
- .balloon {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.281);
-    background-color: var(--cor-whats);
 }
 
 .balloon {
@@ -210,7 +210,10 @@ html {
 
 footer {
     background-color: var(--cor-secundaria);
-    color: white;
     text-align: center;
     padding: 20px;
+}
+
+footer p {
+    color: white;
 }
