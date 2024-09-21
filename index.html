@@ -18,10 +18,10 @@
             <a href="#cabecalho"><img src="imagens/logo.png" alt="Logo Arruda e Raiza"></a>
             <!-- Menu de navegação na página -->
                 <nav>
-                    <a href="#">Section-1</a>
-                    <a href="#">Section-2</a>
-                    <a href="#">Section-3</a>
-                    <a href="#">Section-4</a>
+                    <a href="#section-1">Section-1</a>
+                    <a href="#section-2">Section-2</a>
+                    <a href="#section-3">Section-3</a>
+                    <a href="#section-4">Section-4</a>
                 </nav>
         </div>
         <!-- Background Header -->
@@ -41,17 +41,42 @@
     </header>
     <main>
         <!-- Sessões -->
-        <section class="section1">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolores eveniet nisi est numquam ab ipsa molestias sit libero qui minima aperiam, vero temporibus voluptatum ut adipisci expedita tempore beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni excepturi praesentium, perferendis dolor est neque aspernatur aperiam et optio nobis eius nostrum labore expedita tempora natus, explicabo maiores sint amet!</p>
+        <section class="section1" id="section-1">
+            <div>
+                <i class="fa-solid fa-suitcase-medical" id="icon"></i>
+                <h2>Título</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, eius nesciunt. Odio minus earum dolores eveniet unde suscipit nam ad neque nostrum dolore eligendi vel explicabo, nisi asperiores sit delectus!</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-bandage" id="icon"></i>
+                <h2>Título</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, eius nesciunt. Odio minus earum dolores eveniet unde suscipit nam ad neque nostrum dolore eligendi vel explicabo, nisi asperiores sit delectus!</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-stethoscope" id="icon"></i>
+                <h2>Título</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, eius nesciunt. Odio minus earum dolores eveniet unde suscipit nam ad neque nostrum dolore eligendi vel explicabo, nisi asperiores sit delectus!</p>
+            </div>
         </section>
-        <section class="section2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolores eveniet nisi est numquam ab ipsa molestias sit libero qui minima aperiam, vero temporibus voluptatum ut adipisci expedita tempore beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni excepturi praesentium, perferendis dolor est neque aspernatur aperiam et optio nobis eius nostrum labore expedita tempora natus, explicabo maiores sint amet!</p>
+        <section class="section2" id="section-2">
+            <div class="box-overlay">
+                <div class="box-image">
+                </div>
+                <div class="box-content">
+                    <h2>Título</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, eius nesciunt. Odio minus earum dolores eveniet unde suscipit nam ad neque nostrum dolore eligendi vel explicabo, nisi asperiores sit delectus!</p>
+                </div>
+            </div>
         </section>
-        <section class="section3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolores eveniet nisi est numquam ab ipsa molestias sit libero qui minima aperiam, vero temporibus voluptatum ut adipisci expedita tempore beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni excepturi praesentium, perferendis dolor est neque aspernatur aperiam et optio nobis eius nostrum labore expedita tempora natus, explicabo maiores sint amet!</p>
+        <section class="section3" id="section-3">
+            <div>
+
+            </div>
         </section>
-        <section class="section4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolores eveniet nisi est numquam ab ipsa molestias sit libero qui minima aperiam, vero temporibus voluptatum ut adipisci expedita tempore beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni excepturi praesentium, perferendis dolor est neque aspernatur aperiam et optio nobis eius nostrum labore expedita tempora natus, explicabo maiores sint amet!</p>
+        <section class="section4" id="section-4">
+            <div>
+
+            </div>
         </section>
     </main>
     <!-- Rodapé -->
@@ -60,3 +85,18 @@
     </footer>
 </body>
 </html>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth'
+        });
+    });
+});
+</script>
