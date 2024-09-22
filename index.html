@@ -1,270 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon-logo.ico" type="image/x-icon" />
-    <title>Arruda e Raíza</title>
-    <link rel="stylesheet" href="estilos/style.css" />
-    <link rel="stylesheet" href="estilos/media-querie.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="cabecalho" id="cabecalho">
-        <!-- Cabeçalho Mobile -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="brigadeiro.ico" type="image/x-icon">
+    <title>Delicias da Lau</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 
-        <p>ARRUDA E RAIZA</p>
-        <a href="https://arrudaeraizaadvocacia.com.br/" target="_blank">
-          <img src="imagens/logo.png" alt="Logo Arruda e Raiza"/>
-        </a>
+    @keyframes teste {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
 
-        <!-- Menu de navegação na página -->
-        <nav>
-          <a href="#section-1">Section-1</a>
-          <a href="#section-2">Section-2</a>
-          <a href="#section-3">Section-3</a>
-          <a href="#section-4">Section-4</a>
-        </nav>
-      </div>
+    body {
+        position: relative;
+        background-image: url(imagens/fundo.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
 
-      <!-- Background Header -->
-      <div class="background_header"></div>
+    div#fundo-logo {
+        display: inline;
+        position: absolute;
+        width: 268px;
+        height: 125px;
+        top: 18px;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 50%;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.350);
+    }
 
-      <!-- Overlay do Background -->
-      <div class="overlay_header">
-        <!-- Texto principal do Header -->
-        <div class="texto_principal_header">
-          <h1>Auxílio doença e Auxilio Acidente</h1>
-          <p>
-            Você sabia que tem direitos que podem garantir sua segurança e
-            proteção em casos de doença ou acidente? Descubra como nosso
-            advogado especializado em auxílio doença e auxílio acidente pode
-            ajudá-lo a acessar esses benefícios. Clique aqui para obter a
-            assistência jurídica que você merece e conheça seus direitos agora
-            mesmo!
-          </p>
-        </div>
+    .container {
+        position: relative;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        width: 300px;
+    }
 
-        <!-- Balão flutuante WhatsApp -->
-        <div class="container_balloon">
-          <a href="https://api.whatsapp.com/send/?phone=5548991749070&text&type=phone_number&app_absent=0" target="_blank" class="balloon"></a>
-        </div>
-      </div>
-    </header>
-    <main>
-      <!-- Sessão 1 -->
-      <section class="section1" id="section-1">
-        <div>
-          <i class="fa-solid fa-suitcase-medical" id="icon"></i>
-          <h2>Título</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-            eius nesciunt. Odio minus earum dolores eveniet unde suscipit nam ad
-            neque nostrum dolore eligendi vel explicabo, nisi asperiores sit
-            delectus!
-          </p>
-        </div>
-        <div>
-          <i class="fa-solid fa-bandage" id="icon"></i>
-          <h2>Título</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-            eius nesciunt. Odio minus earum dolores eveniet unde suscipit nam ad
-            neque nostrum dolore eligendi vel explicabo, nisi asperiores sit
-            delectus!
-          </p>
-        </div>
-        <div>
-          <i class="fa-solid fa-stethoscope" id="icon"></i>
-          <h2>Título</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-            eius nesciunt. Odio minus earum dolores eveniet unde suscipit nam ad
-            neque nostrum dolore eligendi vel explicabo, nisi asperiores sit
-            delectus!
-          </p>
-        </div>
-      </section>
+    #container1 {
+        margin: auto;
+        margin-top: 30px;
+        width: 320px; 
+    }
 
-      <!-- Sessão 2 -->
-      <section class="section2" id="section-2">
-        <div>
-          <h2>Título</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-            eius nesciunt. Odio minus earum dolores eveniet unde suscipit nam ad
-            neque nostrum dolore eligendi vel explicabo, nisi asperiores sit
-            delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit, nobis laborum, unde accusantium beatae vitae eligendi
-            praesentium id debitis iusto officiis, exercitationem ab neque
-            voluptatum dolores minus non labore nemo!
-          </p>
-        </div>
-      </section>
+    .links {
+        position: relative;
+        display: block;
+        margin-bottom: 25px;
+        padding: 4px;
+        text-decoration: none;
+        text-align: center;
+        font-family: "Delius", system-ui;
+        font-size: 1.7em;
+        color: #552D28;
+        background-color: #FFE5E9;
+        border-radius: 25px;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.250);
+        text-shadow: 0px 0px 2px rgba(83, 83, 83, 0.150);
+        border: 2px solid transparent;
+        animation: teste 1s;
+        z-index: 2;
+    }
 
-      <!-- Sessão 3 -->
-      <section class="section3" id="section-3">
-        <div class="section3-image"></div>
-        <div class="section3-content">
-          <h2>Título</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            nobis provident minus, cupiditate eum ipsa molestiae ullam vero?
-            Deleniti assumenda obcaecati dolor vero, id quaerat fugiat nemo
-            voluptatibus ea tempore? Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Quaerat harum a deserunt exercitationem possimus,
-            explicabo nemo eius, magni tempora vero alias adipisci ratione
-            debitis molestiae soluta error blanditiis reprehenderit in.
-          </p>
-        </div>
-      </section>
+    #container2 {
+        position: relative;
+        background-color: transparent;
+        margin: auto;
+        margin-top: -280px;
+        width: 300px;
+        height: 250px;
+    }
 
-      <!-- Sessão 4 -->
-      <section class="section4" id="section-4">
-        <div class="faq">
-          <div class="faq-item">
-            <div class="faq-question">
-              <span class="question-text">Pergunta frequente</span>
-              <span class="icon"><i class="fa-solid fa-plus"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis fuga vero impedit fugit. Et, vel neque laboriosam
-                molestiae reprehenderit doloremque asperiores ducimus aperiam
-                dolores eveniet reiciendis beatae recusandae dicta amet? Lorem
-                ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
-                eaque, a neque est nobis beatae! Minima reprehenderit soluta
-                odit, saepe atque earum impedit repellendus minus, maiores natus
-                unde, dicta deleniti.
-              </p>
-            </div>
-          </div>
+    .map-container {
+        position: relative;
+        display: none;
+        width: 330px;
+        height: 370px;
+        background-color: white;
+        z-index: 3;
+        border-radius: 25px 0px 25px 0px;
+        margin: -470px auto;
+    }
 
-          <div class="faq-item">
-            <div class="faq-question">
-              <span class="question-text">Pergunta frequente</span>
-              <span class="icon"><i class="fa-solid fa-plus"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis fuga vero impedit fugit. Et, vel neque laboriosam
-                molestiae reprehenderit doloremque asperiores ducimus aperiam
-                dolores eveniet reiciendis beatae recusandae dicta amet? Lorem
-                ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
-                eaque, a neque est nobis beatae! Minima reprehenderit soluta
-                odit, saepe atque earum impedit repellendus minus, maiores natus
-                unde, dicta deleniti.
-              </p>
-            </div>
-          </div>
+    #botao-maps {
+        display: inline-block;
+        padding-top: 12px;
+        width: 300px;
+        height: 33px;
+        transform: translate(15px, 310px);
+        border-radius: 0px 0px 25px 0px;
+        background-color: #FFADB9;
+        text-decoration: none;
+        font-family: fonte2;
+        font-size: 1.1em;
+        color: white;
+        text-align: center;
+    }
 
-          <div class="faq-item">
-            <div class="faq-question">
-              <span class="question-text">Pergunta frequente</span>
-              <span class="icon"><i class="fa-solid fa-plus"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis fuga vero impedit fugit. Et, vel neque laboriosam
-                molestiae reprehenderit doloremque asperiores ducimus aperiam
-                dolores eveniet reiciendis beatae recusandae dicta amet? Lorem
-                ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
-                eaque, a neque est nobis beatae! Minima reprehenderit soluta
-                odit, saepe atque earum impedit repellendus minus, maiores natus
-                unde, dicta deleniti.
-              </p>
-            </div>
-          </div>
+    #botao-maps:hover, #botao-maps:focus {
+        background-color: #FFE5E9;
+        color:#552D28;
+        text-decoration: underline;
+    }
 
-          <div class="faq-item">
-            <div class="faq-question">
-              <span class="question-text">Pergunta frequente</span>
-              <span class="icon"><i class="fa-solid fa-plus"></i></span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Debitis fuga vero impedit fugit. Et, vel neque laboriosam
-                molestiae reprehenderit doloremque asperiores ducimus aperiam
-                dolores eveniet reiciendis beatae recusandae dicta amet? Lorem
-                ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
-                eaque, a neque est nobis beatae! Minima reprehenderit soluta
-                odit, saepe atque earum impedit repellendus minus, maiores natus
-                unde, dicta deleniti.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+    #botao-maps:active {
+        background-color: #FFADB9;
+        color: white;
+    }
 
-    <!-- Rodapé -->
-    <footer>
-      <div>
-        <h3>Arruda e Raíza Advocacia</h3>
-        <p>Advocacia e consultoria multiespecializada</p>
-        <a href="mailto:contato@arrudaeraizaadvocacia.com.br" target="_blank">contato@arrudaeraizaadvocacia.com.br</a>
-      </div>
-      <div>
-        <p class="footer-p">Visite nosso site e nossas redes sociais</p>
-        <a href="https://arrudaeraizaadvocacia.com.br/" target="_blank"><i class="fa-solid fa-globe"></i> &nbsp;www.arrudaeraizaadvocacia.com.br</a> <br>
-        <a href="https://www.instagram.com/arrudaeraiza/" target="_blank"><i class="fa-brands fa-instagram"></i>&nbsp; @arrudaeraiza</a>
-      </div>
-    </footer>
-  </body>
-</html>
+    .map-container iframe {
+        position: absolute;
+        margin: auto;
+        padding-bottom: 40px;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 300px;
+        transform: translate(-50%, -50%);
+        border-radius: 25px 0px 25px 0px;
+        border: 0px;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.274);
+        pointer-events: none;
+    }
+</style>
 
-<!-- JavaScript -->
+</head>
+<body>
+    <div id="fundo-logo"></div>
+
+    </div>
+<div>
+    <img src="imagens/logo.png" alt="Logo" class="container">
+</div>
+<div id="container1">
+    <a href="https://api.whatsapp.com/send?phone=554896168414&fbclid=PAZXh0bgNhZW0CMTEAAaY_GuKrPnXuazreB4-X44MFfcT731FeBbJEt2nX4mUcUSfFK_SuvIY2zPg_aem_b7CmHCEOiO_e-aYojd6bKA" target="_blank" class="links">WhatsApp</a>
+    <a href="menu-catalogo.html" target="_self" class="links">Catálogo</a>
+    <a href="#" target="_blank" class="links" id="maps">Nossa localização</a>
+    <a href="https://www.google.com/search?q=delicias+da+lau&sca_esv=8d507574ebaa0a20&sca_upv=1&authuser=1&sxsrf=ADLYWIIL672W29TGKNmNh27r6uygDBQnSA%3A1724894358560&source=hp&ei=lszPZs2rIIff1sQP4dPYiAU&iflsig=AL9hbdgAAAAAZs_aplp6NSQkDaV2Pa1uOM9jGOfQ2p9h&oq=deli&gs_lp=Egdnd3Mtd2l6IgRkZWxpKgIIADIKECMYgAQYJxiKBTIKEAAYgAQYQxiKBTILEAAYgAQYsQMYyQMyCxAuGIAEGMcBGK8BMgsQABiABBiSAxiKBTILEAAYgAQYkgMYigUyCBAAGIAEGLEDMggQABiABBixAzIKEAAYgAQYQxiKBTIIEAAYgAQYsQNIvwhQAFjMA3AAeACQAQCYAY8BoAGtBKoBAzAuNLgBA8gBAPgBAZgCBKACvQTCAgwQABiABBhDGIoFGArCAgsQABiABBixAxiDAcICBRAAGIAEwgIFEC4YgATCAggQLhiABBixA8ICERAuGIAEGLEDGNEDGIMBGMcBmAMAkgcDMC40oAfYJQ&sclient=gws-wiz#lrd=0x9527351c10aba45b:0xf99968f0fe2af3dc,3,,,," target="_blank" class="links"> Nos avalie no Google</a>
+</div>
+    <div class="map-container" id="mapContainer">
+        <a href="https://maps.app.goo.gl/b4TmRh27qAr65t848" target="_blank" id="botao-maps">Conheça nossa localização!</a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14135.714733390842!2d-48.7099278!3d-27.6576781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527351c10aba45b%3A0xf99968f0fe2af3dc!2sDel%C3%ADcias%20Da%20Lau%20Virtual!5e0!3m2!1spt-BR!2sbr!4v1724897104614!5m2!1spt-BR!2sbr"></iframe>  
+    </div>
 <script>
-  document.querySelectorAll('a[href^="#"]').forEach((link) => {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-
-      const targetId = this.getAttribute("href");
-      const targetElement = document.querySelector(targetId);
-
-      window.scrollTo({
-        top: targetElement.offsetTop,
-        behavior: "smooth",
-      });
+    // Mostra ou esconde o mapa quando o botão é clicado
+    document.getElementById('maps').addEventListener('click', function(event) {
+        event.preventDefault(); // Previne a ação padrão do link
+        var mapContainer = document.getElementById('mapContainer');
+        if (mapContainer.style.display === 'none' || mapContainer.style.display === '') {
+            mapContainer.style.display = 'block'; // Mostra o mapa
+        } else {
+            mapContainer.style.display = 'none'; // Esconde o mapa
+        }
     });
-  });
 
-  document.querySelectorAll(".faq-question").forEach((item) => {
-    item.addEventListener("click", function () {
-      const answer = this.nextElementSibling;
-      const icon = this.querySelector(".icon i");
+    // Fecha o mapa ao clicar fora dele
+    document.addEventListener('click', function(event) {
+        var mapContainer = document.getElementById('mapContainer');
+        var mapsButton = document.getElementById('maps');
 
-      if (answer.classList.contains("active")) {
-        answer.style.maxHeight = null;
-        answer.classList.remove("active");
-        icon.classList.remove("fa-minus");
-        icon.classList.add("fa-plus");
-      } else {
-        document.querySelectorAll(".faq-answer").forEach((otherAnswer) => {
-          otherAnswer.style.maxHeight = null;
-          otherAnswer.classList.remove("active");
-        });
-
-        document
-          .querySelectorAll(".faq-question .icon i")
-          .forEach((otherIcon) => {
-            otherIcon.classList.remove("fa-minus");
-            otherIcon.classList.add("fa-plus");
-          });
-
-        answer.style.maxHeight = answer.scrollHeight + "px";
-        answer.classList.add("active");
-        icon.classList.remove("fa-plus");
-        icon.classList.add("fa-minus");
-      }
+        if (mapContainer.style.display === 'block' && 
+            !mapContainer.contains(event.target) && 
+            event.target !== mapsButton) {
+            mapContainer.style.display = 'none'; // Esconde o mapa
+        }
     });
-  });
 </script>
+</body>
+</html>
