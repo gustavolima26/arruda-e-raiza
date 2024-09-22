@@ -74,8 +74,56 @@
             </div>
         </section>
         <section class="section4" id="section-4">
-            <div>
+            <div class="faq">
+                <div class="faq-item">
+                  <div class="faq-question">
+                    <span class="question-text">Pergunta frequente</span>
+                    <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                  </div>
+                  <div class="faq-answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis fuga vero impedit fugit. Et, vel neque laboriosam molestiae reprehenderit doloremque asperiores ducimus aperiam dolores eveniet reiciendis beatae recusandae dicta amet? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur eaque, a neque est nobis beatae! Minima reprehenderit soluta odit, saepe atque earum impedit repellendus minus, maiores natus unde, dicta deleniti.</p>
+                  </div>
+                </div>
+              
+                <div class="faq-item">
+                  <div class="faq-question">
+                    <span class="question-text">Pergunta frequente</span>
+                    <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                  </div>
+                  <div class="faq-answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis fuga vero impedit fugit. Et, vel neque laboriosam molestiae reprehenderit doloremque asperiores ducimus aperiam dolores eveniet reiciendis beatae recusandae dicta amet? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur eaque, a neque est nobis beatae! Minima reprehenderit soluta odit, saepe atque earum impedit repellendus minus, maiores natus unde, dicta deleniti.</p>
+                  </div>
+                </div>
 
+                <div class="faq-item">
+                    <div class="faq-question">
+                      <span class="question-text">Pergunta frequente</span>
+                      <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis fuga vero impedit fugit. Et, vel neque laboriosam molestiae reprehenderit doloremque asperiores ducimus aperiam dolores eveniet reiciendis beatae recusandae dicta amet? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur eaque, a neque est nobis beatae! Minima reprehenderit soluta odit, saepe atque earum impedit repellendus minus, maiores natus unde, dicta deleniti.</p>
+                    </div>
+                  </div>
+
+                  <div class="faq-item">
+                    <div class="faq-question">
+                      <span class="question-text">Pergunta frequente</span>
+                      <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis fuga vero impedit fugit. Et, vel neque laboriosam molestiae reprehenderit doloremque asperiores ducimus aperiam dolores eveniet reiciendis beatae recusandae dicta amet? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur eaque, a neque est nobis beatae! Minima reprehenderit soluta odit, saepe atque earum impedit repellendus minus, maiores natus unde, dicta deleniti.</p>
+                    </div>
+                  </div>
+
+                <div class="faq-item">
+                  <div class="faq-question">
+                    <span class="question-text">Pergunta frequente</span>
+                    <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                  </div>
+                  <div class="faq-answer">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis fuga vero impedit fugit. Et, vel neque laboriosam molestiae reprehenderit doloremque asperiores ducimus aperiam dolores eveniet reiciendis beatae recusandae dicta amet? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur eaque, a neque est nobis beatae! Minima reprehenderit soluta odit, saepe atque earum impedit repellendus minus, maiores natus unde, dicta deleniti.</p>
+                  </div>
+                </div>
             </div>
         </section>
     </main>
@@ -99,4 +147,21 @@
         });
     });
 });
+
+document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', function () {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('.icon i');
+
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+
+                if (icon.classList.contains('fa-plus')) {
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                } else {
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                }
+            });
+        });
 </script>

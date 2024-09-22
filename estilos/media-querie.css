@@ -105,6 +105,26 @@ p {
     .section3 .section3-content {
         height: 400px;
     }
+
+    .section4 {
+        padding: 0px;
+        background-color: white;
+    }
+
+    .faq-item {
+        background-color: var(--cor-primaria);
+        margin: 2px 0px;
+        border-radius: 0;
+    }
+
+    .question-text, .faq-question .icon, .faq-answer p {
+        color: white;
+        font-size: 1.1em;
+      }
+
+      .faq-item:hover .question-text,.faq-item:hover .faq-question .icon, .faq-item:hover .faq-answer p {
+        color: var(--cor-secundaria);
+      }
 }
 
 @media screen and (min-width: 656px) and (max-width:1256px) {
