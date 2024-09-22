@@ -202,7 +202,7 @@ p {
     transition: transform 0.3s ease;
 }
 
-.section1 div:hover {
+.section1 div:hover, .section1 div:active {
     background-color: #f0f0f0;
     transform: scale(1.03);
     color: #56585e;
