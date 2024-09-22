@@ -26,8 +26,21 @@ p {
     color: var(--cor-font);
 }
 
+@media (hover: none) {
+    div:hover {
+        background-color: inherit;
+        transform: inherit;
+        color: inherit;
+        transition: inherit;  
+    }
+
+    .section1 div:hover h2, .section1 div:hover p, .section1 div:hover #icon {
+        color: inherit;
+    }
+}
+
  @media screen and (max-width: 655px) {
-    
+
     header {
         min-height: 650px;
         height: 100vh;  
@@ -81,15 +94,19 @@ p {
     .balloon {
         width: 65px;
         height: 65px;
-        background: #25d366 url(../imagens/botao-flutuante-wp-mobile.svg);
+        background: #25d366 url(../imagens/botao-flutuante-wp-mobile.svg) no-repeat center center fixed;
     }
 
     .balloon:hover {
-        background: #25d366 url(../imagens/logo-botao-flutuante-mobile.png);
+        background: var(--cor-secundaria) url(../imagens/logo-botao-flutuante-mobile.png) no-repeat center center fixed;
     }
 
     .section1 {
         flex-flow: row wrap;
+    }
+
+    .section2 div p {
+        font-size: 1.2em;
     }
 
     .section3 {
@@ -101,6 +118,10 @@ p {
         background-size: cover;
         height: 400px !important;
         width: 400px;
+    }
+
+    .section3 p {
+        font-size: 1.2em;
     }
 
     .section4 {
@@ -122,6 +143,23 @@ p {
       .faq-item:hover .question-text,.faq-item:hover .faq-question .icon, .faq-item:hover .faq-answer p {
         color: var(--cor-secundaria);
       }
+
+      footer {
+        display: block;
+    }
+
+    footer div {
+        margin: 0px 0px;
+    }
+
+    footer h3, footer p {
+        text-align: left;
+    }
+
+    footer a {
+        font-size: 1em;
+    }
+   
 }
 
 @media screen and (min-width: 656px) and (max-width:890px) {
@@ -133,9 +171,23 @@ p {
     .section1 div {
         width: 300px;
     }
+
+    .balloon {
+        width: 75px;
+        height: 75px;
+        background: #25d366 url(../imagens/botao-flutuante-wp-mobile.svg) no-repeat center center fixed;
+    }
+
+    .balloon:hover {
+        background: var(--cor-secundaria) url(../imagens/logo-botao-flutuante-mobile.png) no-repeat center center fixed;
+    }
+
+    footer {
+        text-align: center;
+    }
 }
 
-@media screen and (min-width: 891px) and (max-width:1024px) {
+@media screen and (min-width: 891px) and (max-width:1106px) {
 
     .section1 {
         flex-flow: row nowrap;
@@ -158,6 +210,10 @@ p {
 
     .balloon:hover {
         background: var(--cor-secundaria) url(../imagens/logo-botao-flutuante-mobile.png) no-repeat center center fixed;
+    }
+
+    footer {
+        text-align: center;
     }
 
 }

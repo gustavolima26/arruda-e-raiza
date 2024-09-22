@@ -69,7 +69,6 @@ p {
 .cabecalho a {
     display: inline-block;
     width: 100px;
-    margin: 0px 15px;
     padding: 20px 0px;
     text-decoration: none;
     text-align: center;
@@ -179,7 +178,7 @@ p {
     }
 }
 
-/* Sessões */
+/* Sessão 1 */
 
 .section1 {
     padding: 50px 0px;
@@ -202,7 +201,7 @@ p {
     transition: transform 0.3s ease;
 }
 
-.section1 div:hover, .section1 div:active {
+.section1 div:hover {
     background-color: #f0f0f0;
     transform: scale(1.03);
     color: #56585e;
@@ -237,6 +236,8 @@ p {
     color: #ebebeb;
 }
 
+/* Sessão 2 */
+
 .section2 {
     padding: 150px 0px;
     background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imagens/background-sections.jpg);
@@ -270,12 +271,14 @@ p {
 }
 
 .section2 div p {
-    padding: 30px;
+    padding: 20px;
     font-size: 1.4em;
     text-align: justify;
     color: #ebebeb;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.300);
 }
+
+/* Sessão 3 */
 
 .section3 {
     padding: 50px 0px;
@@ -301,9 +304,9 @@ p {
 
 .section3-content {
     max-width: 600px;
-    min-width: 400px;
+    min-width: 340px;
     height: auto !important;
-    padding: 20px;
+    padding:10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -322,6 +325,7 @@ p {
 }
 
 /* Sessão 4 - FAQ */
+
 .section4 {
     padding: 50px 0px;
     background-color: var(--cor-primaria);   
@@ -393,11 +397,62 @@ p {
 /* Rodapé */
 
 footer {
+    height: auto;
     background-color: var(--cor-secundaria);
-    text-align: center;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+footer div {
+    margin: 0px 80px;
+}
+
+footer h3 {
+    font-size: 1.4em;
+    text-align: center;
+    background: radial-gradient(ellipse, #faec9f, #caa840); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
 
 footer p {
+    font-size: 1.1em;
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+    margin-top: -8px;
+    background: radial-gradient(ellipse, #faec9f, #caa840); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+footer .footer-p {
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+footer a {
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: bold;
     color: white;
+    cursor: pointer;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer i {
+    font-size: 24px;
+    padding: 5px 0px;
+    vertical-align: middle;
+}
+
+footer .fa-brands {
+    font-size: 28px;
 }
