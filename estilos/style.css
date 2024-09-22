@@ -100,8 +100,13 @@ p {
     width: 100%;
     top: 0;
     z-index: 0;
-    background: var(--cor-primaria) url(../imagens/background.png) no-repeat center center fixed;
+    background-color: var(--cor-primaria);
+    background-image: url(../imagens/background.png); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    -webkit-background-size: cover;
 }
 
 /* Overlay do background no Header */
@@ -246,8 +251,10 @@ p {
 }
 
 .section2 {
-    padding: 50px 0px;
-    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imagens/background-sections.jpg) no-repeat fixed;
+    padding: 150px 0px;
+    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imagens/background-sections.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: right bottom;
     background-size: cover; 
     
