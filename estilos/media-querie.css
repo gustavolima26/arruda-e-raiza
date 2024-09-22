@@ -26,6 +26,18 @@ p {
     color: var(--cor-font);
 }
 
+@media (hover: none) {
+    .balloon:hover {
+        background: inherit;
+    }
+
+    .section1 div:hover {
+        background-color:inherit;
+        transform: inherit;
+        color: inherit;
+    }
+}
+
  @media screen and (max-width: 655px) {
     
     header {
