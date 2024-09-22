@@ -39,6 +39,7 @@ p {
 
     .cabecalho p {
         display: block;
+        margin: auto;
         text-align: center;
         padding-top: 80px;
         font-family: 'BOOWIE', sans-serif;
@@ -87,8 +88,8 @@ p {
         background: #25d366 url(../imagens/logo-botao-flutuante-mobile.png);
     }
 
-    .balloon:active {
-        background: #25d366 url(../imagens/botao-flutuante-wp-mobile.svg);
+    .section1 {
+        flex-flow: row wrap;
     }
 
     .section3 {
@@ -123,10 +124,40 @@ p {
       }
 }
 
-@media screen and (min-width: 656px) and (max-width:1256px) {
+@media screen and (min-width: 656px) and (max-width:890px) {
+
+    .section1 {
+        flex-flow: column wrap;
+    }
+
+    .section1 div {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 891px) and (max-width:1024px) {
+
+    .section1 {
+        flex-flow: row nowrap;
+        gap: 10px;
+    }
+
+    .section1 div {
+        width: 300px;
+    }
 
     .section3 .section3-content {
         height: 300px;
+    }
+
+    .balloon {
+        width: 75px;
+        height: 75px;
+        background: #25d366 url(../imagens/botao-flutuante-wp-mobile.svg) no-repeat center center fixed;
+    }
+
+    .balloon:hover {
+        background: var(--cor-secundaria) url(../imagens/logo-botao-flutuante-mobile.png) no-repeat center center fixed;
     }
 
 }

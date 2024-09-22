@@ -15,7 +15,7 @@
             <!-- Cabeçalho Mobile -->
             <p>ARRUDA E RAIZA</p>
             <!-- Icone fixo link detorno inicio da página -->
-            <a href="#cabecalho"><img src="imagens/logo.png" alt="Logo Arruda e Raiza"></a>
+            <a href="https://arrudaeraizaadvocacia.com.br/" target="_blank"><img src="imagens/logo.png" alt="Logo Arruda e Raiza"></a>
             <!-- Menu de navegação na página -->
                 <nav>
                     <a href="#section-1">Section-1</a>
@@ -149,19 +149,43 @@
 });
 
 document.querySelectorAll('.faq-question').forEach(item => {
-            item.addEventListener('click', function () {
-                const answer = this.nextElementSibling;
-                const icon = this.querySelector('.icon i');
+    item.addEventListener('click', function () {
+        const answer = this.nextElementSibling;
+        const icon = this.querySelector('.icon i');
 
-                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-
-                if (icon.classList.contains('fa-plus')) {
-                    icon.classList.remove('fa-plus');
-                    icon.classList.add('fa-minus');
-                } else {
-                    icon.classList.remove('fa-minus');
-                    icon.classList.add('fa-plus');
-                }
+        // Se a resposta atual já está aberta, fecha-a
+        if (answer.classList.contains('active')) {
+            answer.style.maxHeight = null;  // Fecha a resposta suavemente
+            answer.classList.remove('active');
+            icon.classList.remove('fa-minus');
+            icon.classList.add('fa-plus');
+        } else {
+            // Fecha todas as outras respostas
+            document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+                otherAnswer.style.maxHeight = null;  // Suavemente fecha as outras
+                otherAnswer.classList.remove('active');
             });
+
+            // Resetar todos os ícones para '+'
+            document.querySelectorAll('.faq-question .icon i').forEach(otherIcon => {
+                otherIcon.classList.remove('fa-minus');
+                otherIcon.classList.add('fa-plus');
+            });
+
+            // Abrir a resposta clicada
+            answer.style.maxHeight = answer.scrollHeight + "px";  // Define a altura para abrir suavemente
+            answer.classList.add('active');
+            icon.classList.remove('fa-plus');
+            icon.classList.add('fa-minus');
+        }
+    });
+});
+
+document.addEventListener('touchstart', function() {
+    document.querySelectorAll('.element').forEach(item => {
+        item.addEventListener('touchend', function() {
+            this.style.backgroundColor = ''; // Resetar para a cor original
         });
+    });
+});
 </script>
