@@ -247,45 +247,90 @@ p {
 }
 
 .section2 {
-    margin: 50px 0px;
-    background:white url(../imagens/front-view-blurry-lawyer-working.jpg) no-repeat fixed;
+    padding: 50px 0px;
+    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imagens/background-sections.jpg) no-repeat fixed;
     background-position: bottom bottom;
     background-size: cover; 
     
-}
-
-.section2 .box-overlay {
-    padding: 50px 0px;
-    width: 100%;
-    background-color: rgba(34, 34, 34, 0.600);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 200px;
-    box-shadow: inset 0px 0px 5px 10px rgba(0, 0, 0, 0.200);
+    box-shadow: inset 0px 0px 5px 5px rgba(148, 148, 148, 0.2);
 }
 
 .section2 div {
     height: 600px;
-    width: 500px;
-    background-color: #25d366;
+    max-width: 1000px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.section2 div h2 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #ebebeb;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.300);
+}
+
+.section2 div p {
+    padding: 30px;
+    font-size: 1.4em;
+    text-align: justify;
+    color: #ebebeb;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.300);
 }
 
 .section3 {
     padding: 50px 0px;
-    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: row wrap;
+    gap: 30px;
 }
 
 .section3 div {
-    height: 400px;
+    margin: 0px 10px;
+    height: 600px;
+    border-radius: 30px;
 }
+
+.section3-image {
+    background: white url(../imagens/imagem-advogadas.jpeg) no-repeat center center;
+    background-size: cover;
+    box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, 0.300);
+    width: 500px;
+    min-width: 400px;
+}
+
+.section3-content {
+    max-width: 600px;
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.section3-content h2 {
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.300);
+}
+
+.section3-content p {
+    font-size: 1.3em;
+    text-align: justify;
+}
+
 
 .section4 {
     padding: 50px 0px;
-    background-color: #ffffff;
+    background-color: #ac0909;
     display: flex;
     align-items: center;
     justify-content: center;

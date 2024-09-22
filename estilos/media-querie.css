@@ -90,11 +90,30 @@ p {
     .balloon:active {
         background: #25d366 url(../imagens/botao-flutuante-wp-mobile.svg);
     }
+
+    .section3 {
+        margin: 10px;
+    }
+
+    .section3-image {
+        background-image: url(../imagens/imagem-advogadas-mobile.jpeg);
+        background-size: cover;
+        height: 400px !important;
+        width: 400px;
+    }
+
+    .section3 .section3-content {
+        height: 400px;
+    }
 }
 
 @media screen and (min-width: 656px) and (max-width:1256px) {
     .section1 {
         flex-flow: column;
+    }
+
+    .section3 .section3-content {
+        height: 300px;
     }
 
 }
