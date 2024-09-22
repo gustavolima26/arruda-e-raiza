@@ -203,8 +203,7 @@ p {
     flex: 0 1 calc(300px);
     margin: 0px 30px;
     background-color: var(--cor-primaria);
-    width: 300px;
-    min-width: 300px;
+    width: auto;
     height: 400px;
     border-radius: 30px;
     box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.200);
@@ -249,7 +248,7 @@ p {
 .section2 {
     padding: 50px 0px;
     background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imagens/background-sections.jpg) no-repeat fixed;
-    background-position: bottom bottom;
+    background-position: right bottom;
     background-size: cover; 
     
     display: flex;
@@ -260,7 +259,7 @@ p {
 }
 
 .section2 div {
-    height: 600px;
+    height: auto;
     max-width: 1000px;
     width: 900px;
     display: flex;
@@ -310,6 +309,8 @@ p {
 .section3-content {
     max-width: 600px;
     min-width: 400px;
+    height: auto !important;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -385,7 +386,6 @@ p {
     display: block;
   }
   
- 
 
 /* Rodapé */
 
