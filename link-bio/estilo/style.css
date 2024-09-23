@@ -50,13 +50,6 @@ body {
     margin-top: 30px;
 }
 
-.links:hover {
-    background-color: #c5a544;
-    color: #f8f4de;
-    border: 2.5px solid #f8f4de;
-    transition: background-color 1s ease;
-}
-
 .links {
     position: relative;
     margin-bottom: 25px;
@@ -118,13 +111,22 @@ body {
     z-index: 2;
 }
 
-#botao-maps:hover {
-    background-color: #f8f4de;
-    color:#c5a544;
-    text-decoration: underline;
-}
+@media (hover: hover) and (pointer: fine) {
+    .links:hover {
+        background-color: #c5a544;
+        color: #f8f4de;
+        border: 2.5px solid #f8f4de;
+        transition: background-color 1s ease;
+    }
 
-#botao-maps:active {
-    background-color: #f8f4de;
-    color:#c5a544;
+    #botao-maps:hover {
+        background-color: #f8f4de;
+        color: #c5a544;
+        text-decoration: underline;
+    }
+
+    #botao-maps:active {
+        background-color: #f8f4de;
+        color: #c5a544;
+    }
 }
