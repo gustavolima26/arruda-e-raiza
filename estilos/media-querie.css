@@ -158,6 +158,7 @@ p {
 
     footer a {
         font-size: 1em;
+        word-wrap: break-word;
     }
    
 }

@@ -64,6 +64,7 @@ p {
 .cabecalho nav {
     display: flex;
     justify-content: flex-end;
+    gap: 20px;
 }
 
 .cabecalho a {
@@ -72,7 +73,8 @@ p {
     padding: 20px 0px;
     text-decoration: none;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-family: var(--fonte-destaque);
     color: var(--cor-secundaria);
 }
 
@@ -123,7 +125,7 @@ p {
     /* Efeito texto principal */
     opacity: 0;
     transform: translateY(-10px); 
-    animation: surgir 2s ease forwards; */
+    animation: surgir 2s ease forwards;
 }
 
     /* Fim do efeito */
@@ -301,7 +303,6 @@ p {
 
 .section3-content {
     max-width: 600px;
-    min-width: 340px;
     height: auto !important;
     padding:10px;
     display: flex;
