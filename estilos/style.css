@@ -240,10 +240,7 @@ p {
 
 .section2 {
     padding: 150px 0px;
-    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imagens/background-sections.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: right bottom;
+    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imagens/background-sections.jpg) no-repeat right bottom fixed;
     background-size: cover; 
     
     display: flex;
