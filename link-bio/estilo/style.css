@@ -134,10 +134,14 @@ body {
 /* Desativa o hover em telas menores */
 @media (max-width: 767px) {
     .links {
-        pointer-events: none; /* Desativa completamente os eventos do hover em telas pequenas */
+        background-color: #f8f4de; /* Mantém a cor padrão */
+        color: #c5a544;           /* Sem efeito hover */
+        border: 2.5px solid #c5a544;
     }
 
     #botao-maps {
-        pointer-events: none;
+        background-color: #c5a544; /* Mantém a cor padrão */
+        color: #f8f4de;           /* Sem efeito hover */
+        text-decoration: none;
     }
 }
