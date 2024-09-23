@@ -111,7 +111,7 @@ body {
     z-index: 2;
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (min-width: 768px) {
     .links:hover {
         background-color: #c5a544;
         color: #f8f4de;
@@ -128,5 +128,16 @@ body {
     #botao-maps:active {
         background-color: #f8f4de;
         color: #c5a544;
+    }
+}
+
+/* Desativa o hover em telas menores */
+@media (max-width: 767px) {
+    .links {
+        pointer-events: none; /* Desativa completamente os eventos do hover em telas pequenas */
+    }
+
+    #botao-maps {
+        pointer-events: none;
     }
 }
