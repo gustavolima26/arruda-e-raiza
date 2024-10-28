@@ -241,6 +241,10 @@ li {
 
 /* Sessão 1 */
 
+.section1 {
+  margin-bottom: 60px;
+}
+
 .section1-container {
   display: flex;
   justify-content: space-evenly;
