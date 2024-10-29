@@ -111,7 +111,7 @@
         </p>
         <div class="section2-container">
             <div>
-              <h3>Online </h3>
+              <h3>On-line </h3>
               <p>
                 Realizamos toda a triagem, consulta e orientação de forma
                 remota. Desde o primeiro contato até a assinatura do contrato, tudo
@@ -217,7 +217,7 @@
 
       <!-- Sessão 5 -->
       <section class="section5" id="section-5">
-        <h2>Veja como ajudamos empresas como a sua:</h2>
+        <h2>Veja como ajudamos empresas como a sua</h2>
         <div class="section5-container">
           <div>
             <div class="section5-icon">
@@ -375,6 +375,25 @@
         top: targetElement.offsetTop,
         behavior: "smooth",
       });
+    });
+  });
+
+  document.querySelectorAll('a[href^="#section"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetID = this.getAttribute('href');
+      const targetElement = document.querySelector(targetID);
+
+      if (targetElement) {
+        const offset = 120; // Altura do cabeçalho
+        const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
     });
   });
 </script>
