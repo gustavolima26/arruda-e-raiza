@@ -5,7 +5,7 @@
 
 :root {
     --cor-primaria: #606060;
-    --cor-secundaria: #222222;
+    --cor-secundaria: #393939;
     --cor-font: #56585e;
     --cor-whats: #25d366;
     --cor-logo-primaria: #fbf5d4;
@@ -37,54 +37,35 @@ p {
 
  @media screen and (max-width: 655px) {
 
-    header {
-        min-height: 650px;
-        height: 100vh;  
+    .cabecalho {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
     }
 
     .cabecalho a, .cabecalho img {
         display: none;
     }
 
-    .cabecalho p {
+    #titulomobile {
         display: block;
-        margin: auto;
         text-align: center;
-        padding-top: 80px;
         font-family: 'BOOWIE', sans-serif;
-        font-size: clamp(24px, 10vw, 60px);
+        font-size: 3rem;
         background: radial-gradient(ellipse, #faec9f, #caa840); 
         -webkit-background-clip: text; 
         -webkit-text-fill-color: transparent; 
         text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
     }
 
-    .background_header {
-        min-height: 650px;
-    }
-
-    .overlay_header {
-        min-height: 530px;
-        height: calc(100vh - 120px);
-    }
-
-    .texto_principal_header {
+    #subtitulomobile {
         display: block;
-        margin-bottom: 100px;
-    }
-
-    .texto_principal_header h1 {
-        margin: auto;
-        padding-bottom: 20px;
-        font-size: clamp(28px, 6vw, 40px);
-        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.300);
-    }
-
-    .texto_principal_header p {
-        margin: auto;
-        font-size: clamp(16px, 5vw, 24px);
-        text-align: justify;
-        line-height: 22px;
+        font-family: var(--fonte-logo);
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 3px;
+        color: var(--cor-secundaria) !important;
     }
 
     .balloon {
@@ -115,24 +96,42 @@ p {
     }
 }
 
-@media screen and (min-width: 656px) and (max-width:890px) {
+@media screen and (min-width: 656px) and (max-width:1275px) {
 
-    .balloon {
-        width: 75px;
-        height: 75px;
-        background: #25d366 url(../imagens/botao-flutuante-wp-mobile.svg) no-repeat center center fixed;
+    .cabecalho {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
     }
 
-    .balloon:hover {
-        background: var(--cor-secundaria) url(../imagens/logo-botao-flutuante-mobile.png) no-repeat center center fixed;
+    .cabecalho a, .cabecalho img {
+        display: none;
     }
 
-    footer {
+    #titulomobile {
+        display: block;
         text-align: center;
+        font-family: 'BOOWIE', sans-serif;
+        font-size: 4rem;
+        background: radial-gradient(ellipse, #faec9f, #caa840); 
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent; 
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
     }
-}
 
-@media screen and (min-width: 891px) and (max-width:1106px) {
+    #subtitulomobile {
+        display: block;
+        font-family: var(--fonte-logo);
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 3px;
+        color: var(--cor-secundaria) !important;
+    }
+
+    nav {
+        display: none !important;
+    }
 
     .balloon {
         width: 75px;

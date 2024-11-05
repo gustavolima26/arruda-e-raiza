@@ -141,20 +141,21 @@ li {
 /* Background do Header */
 
 .background_header {
-  background-color: var(--cor-secundaria);
+  background: var(--cor-secundaria) url(../imagens/advogadas.png) no-repeat center center;
+  background-size: contain;
   height: 100vh;
   display: flex;
   flex-flow: row nowrap;
 }
 
+
 /* Texto principal do Header */
 
 .texto_principal_header {
-  width: 60vw;
-  margin: auto;
-  margin: 0px 180px;
-  margin-top: 18%;
-  text-align: left;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 
   
   /* Efeito texto principal */
@@ -198,19 +199,6 @@ li {
   background-color: #27e66d;
   text-decoration: underline;
   cursor: pointer;
-}
-
-.background_header_container_adv {
-  position: relative;
-  width: 40vw;
-}
-
-.background_header_adv {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 40vw;
-  min-width: 480px;
 }
 
 /* Sessões */
