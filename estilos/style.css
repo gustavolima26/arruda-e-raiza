@@ -352,7 +352,8 @@ li {
   font-size: 2rem !important;
   line-height: 50px;
   text-align: justify;
-  word-spacing: -5px;
+  width: 490px;
+  
 }
 
 .section2 > p {
@@ -388,12 +389,6 @@ li {
 .section2 a {
   text-decoration: none;
   color: var(--cor-secundaria);
-}
-
-.section2-container p {
-  width: 450px;
-  padding: 20px 0px;
-  font-size: 1.4rem;
 }
 
 .section2 h3 {
@@ -441,7 +436,7 @@ li {
 }
 
 .section3-container div {
-  width:20vw;
+  width: 400px;
   background-color: #e6e6e6;
   padding: 30px;
   border-radius: 20px;
