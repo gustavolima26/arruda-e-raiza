@@ -688,8 +688,8 @@ li {
 }
 
 .section7-container > div {
-  width: 390px;
-  height: 390px;
+  width: 350px;
+  height: 350px;
   background-color: #e6e6e6;
   border-radius: 20px;
   display: flex;
@@ -699,24 +699,24 @@ li {
 }
 
 .section7-imagem1-espaco {
-  width: 380px;
-  height: 380px;
+  width: 340px;
+  height: 340px;
   background: white url(../imagens/espaco1.jpeg) no-repeat center center;
   background-size: cover;
   border-radius: 20px;
 }
 
 .section7-imagem2-espaco {
-  width: 380px;
-  height: 380px;
+  width: 340px;
+  height: 340px;
   background: white url(../imagens/espaco2.jpeg) no-repeat center center;
   background-size: cover;
   border-radius: 20px;
 }
 
 .section7-imagem3-espaco {
-  width: 380px;
-  height: 380px;
+  width: 340px;
+  height: 340px;
   background: white url(../imagens/espaco3.jpeg) no-repeat center center;
   background-size: cover;
   border-radius: 20px;

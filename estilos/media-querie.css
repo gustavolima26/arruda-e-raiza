@@ -116,14 +116,14 @@ p {
       }
 
       .section1-fundo1 {
-        min-width: 350px;
+        min-width: 340px;
         height: 450px;
       }
 
       .section1-fundo2 {
         order: -1;
         margin-top: 50px;
-        min-width: 350px;
+        min-width: 340px;
         height: 450px;
       }
 
