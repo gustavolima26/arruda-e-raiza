@@ -42,6 +42,7 @@ p {
         flex-flow: column nowrap;
         justify-content: center;
         padding: 0px;
+        background-color: white;
     }
 
     .cabecalho a, .cabecalho img {
@@ -99,7 +100,8 @@ p {
     }
 
     .section1 p {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        margin: auto;
     }
 
     .section1 ul p {
@@ -108,7 +110,8 @@ p {
     }
     
     .section1-container {
-        flex-flow: column wrap; 
+        flex-flow: column wrap;
+        width: 95%;  
       }
 
       #section1-container2 {
@@ -154,6 +157,10 @@ p {
         font-size: 1.8rem;
       }
 
+      .section3 {
+        width: 95%;
+      }
+
       .section3 > h2 {
         font-size: 1.8rem;
       }
@@ -189,12 +196,15 @@ p {
 
       .section6-container {
         flex-flow: column wrap;
+        width: 95%;
+        margin: 0px;
+        margin-top: 100px;
       }
 
       .section6-container-imagem {
         order: 10;
-        width: 350px;
-        height: 400px;
+        width: 340px;
+        height: 380px;
       }
 
       .section6 span{
@@ -207,12 +217,12 @@ p {
 
       .section6-container p {
         max-width: 800px;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
       }
       
       .section6 h2 {
         font-size: 1.8rem;
-        margin: 10px;
+        margin: 10px 0px;
         padding: 0px;
       }
 
