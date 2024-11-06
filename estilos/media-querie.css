@@ -74,12 +74,12 @@ p {
     }
 
     .texto_principal_header {
-        margin: 120px 50px 50px 50px;
+        margin: 120px 30px 20px 30px;
         text-align: center;
     }
 
     .texto_principal_header h1 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
       }
       
       .texto_principal_header p {
@@ -88,6 +88,7 @@ p {
       
       .texto_principal_header a {
         font-size: 1rem;
+        margin-top: -20px;
       }
 
       .section1 h2 {
@@ -273,6 +274,7 @@ p {
         font-size: 1.4rem !important;
         display: block;
         line-height: 35px;
+        margin-bottom: 50px;
       }
 
       .section5-container {
