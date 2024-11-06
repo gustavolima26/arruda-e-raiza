@@ -231,6 +231,10 @@ p {
         line-height: 55px;
       }
 
+      .section7 .section7-container {
+        width: 95%;
+      }
+
     .balloon {
         width: 65px;
         height: 65px;
