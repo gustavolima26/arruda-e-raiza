@@ -41,6 +41,7 @@ p {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
+        padding: 0px;
     }
 
     .cabecalho a, .cabecalho img {
@@ -68,6 +69,157 @@ p {
         color: var(--cor-secundaria) !important;
     }
 
+    .background_header_container_adv {
+        display: none;
+    }
+
+    .texto_principal_header {
+        margin: 120px 50px 50px 50px;
+        text-align: center;
+    }
+
+    .texto_principal_header h1 {
+        font-size: 1.6rem;
+      }
+      
+      .texto_principal_header p {
+        font-size: 1.2rem;
+      }
+      
+      .texto_principal_header a {
+        font-size: 1rem;
+      }
+
+      .section1 h2 {
+        font-size: 1.8rem !important;
+        margin: 0px 40px;
+        margin-bottom: 30px;
+        line-height: 40px;
+    }
+
+    .section1 p {
+        font-size: 1.6rem;
+    }
+
+    .section1 ul p {
+        font-size: 1.6rem;
+        line-height: 35px;
+    }
+    
+    .section1-container {
+        flex-flow: column wrap; 
+      }
+
+      #section1-container2 {
+        margin: 0px 0px !important;
+      }
+
+      .section1-fundo1 {
+        min-width: 350px;
+        height: 450px;
+      }
+
+      .section1-fundo2 {
+        order: -1;
+        margin-top: 50px;
+        min-width: 350px;
+        height: 450px;
+      }
+
+      .section1 li {
+        font-size: 1.4rem;
+        line-height: 35px;
+      }
+
+      .section1 span {
+        font-size: 1.8rem;
+      }
+
+      .section2-container {
+        flex-flow: row wrap;
+      }
+
+      .section2 > p {
+        font-size: 1.7rem;
+        line-height: 40px;
+      }
+
+      .section2-container p {
+        font-size: 1.4rem;
+        line-height: 35px;
+      }
+
+      .section2 h3 {
+        font-size: 1.8rem;
+      }
+
+      .section3 > h2 {
+        font-size: 1.8rem;
+      }
+
+      .section3 > p {
+        margin: 30px 0px;
+        font-size: 1.6rem;
+      }
+
+      .section4 h2 {
+        margin: 0px 20px;
+        font-size: 1.8rem;
+      }
+
+      .section4 p {
+        font-size: 1.4rem;
+      }
+
+      .section4-container {
+        width: 85%;
+      }
+
+      .section4-container-michele {
+        margin-bottom: 50px;
+      }
+
+      .section4-container-michele, .section4-container-raphaela {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+      }
+
+      .section6-container {
+        flex-flow: column wrap;
+      }
+
+      .section6-container-imagem {
+        order: 10;
+        width: 350px;
+        height: 400px;
+      }
+
+      .section6 span{
+        order: 10;
+      }
+
+      #section6-sobre {
+        font-size: 2rem;
+      }
+
+      .section6-container p {
+        max-width: 800px;
+        font-size: 1.4rem;
+      }
+      
+      .section6 h2 {
+        font-size: 1.8rem;
+        margin: 10px;
+        padding: 0px;
+      }
+
+      .section6 li {
+        font-size: 1.3rem ;
+        line-height: 55px;
+      }
+
     .balloon {
         width: 65px;
         height: 65px;
@@ -94,6 +246,59 @@ p {
         font-size: 1em;
         word-wrap: break-word;
     }
+}
+
+@media screen and (max-width: 800px) {
+
+    .section5-container p {
+        font-size: 1.2rem;
+        line-height: 25px;
+      }
+
+      .section5-container div {
+        padding: 15px;
+        margin: 15px 0px !important;
+      }
+
+      .section5-container div > i {
+        padding: 0px;
+      }
+
+    .section5 h2 {
+        font-size: 1.4rem !important;
+      }
+
+      #section5-texto-final {
+        margin: 0px 15px;
+        font-size: 1.4rem !important;
+        display: block;
+        line-height: 35px;
+      }
+
+      .section5-container {
+        flex-flow: column wrap;
+      }
+
+}
+
+@media screen and (min-width: 656px) and (max-width:1330px) {
+    .section1-container {
+        flex-flow: column wrap; 
+      }
+
+      #section1-container2 {
+        margin: 0px 0px !important;
+      }
+
+      .section1-fundo2 {
+        margin-top: 80px;
+        order: -1;
+      }
+
+      .section2-container {
+        flex-flow: row wrap;
+      }
+
 }
 
 @media screen and (min-width: 656px) and (max-width:1275px) {
@@ -133,6 +338,121 @@ p {
         display: none !important;
     }
 
+    .background_header_container_adv {
+        display: none;
+    }
+
+    .texto_principal_header {
+        margin: 180px 50px 50px 50px;
+        text-align: center;
+    }
+
+    .section1 h2 {
+        font-size: 2rem !important;
+        margin: 50px;
+        padding: 0;
+    }
+
+    .section1 p {
+        padding: 20px 0px;
+        font-size: 1.4rem;
+      }
+
+      .section1-fundo1 {
+        min-width: 350px;
+        height: 450px;
+      }
+
+      .section1-fundo2 {
+        min-width: 350px;
+        height: 450px;
+      }
+
+      .section1 ul p {
+        font-size: 1.4rem;
+        line-height: 30px;
+      }
+      
+      .section1 span {
+        font-size: 2rem;
+      }
+      
+      .section1 li {
+        font-size: 1.4rem;
+      }
+
+      .section2 > p {
+        font-size: 1.8rem;
+        line-height: 40px;
+      }
+
+      .section2-container p {
+        font-size: 1.6rem;
+        line-height: 40px;
+      }
+
+      .section2 h3 {
+        font-size: 2rem;
+      }
+
+      .section3 > h2 {
+        font-size: 2rem;
+      }
+
+      .section3 > p {
+        margin: 30px;
+        font-size: 1.8rem;
+      }
+
+      .section4 h2 {
+        margin: 0px 20px;
+        font-size: 2rem;
+      }
+
+      .section4 p {
+        font-size: 1.6rem;
+      }
+
+      .section4-container {
+        width: 85%;
+      }
+
+      .section4-container-michele {
+        margin-bottom: 50px;
+      }
+
+      .section4-container-michele, .section4-container-raphaela {
+        flex-flow: column wrap;
+        gap: 50px;
+      }
+
+      .section5-container {
+        flex-flow: column wrap;
+      }
+
+      .section5-container > div {
+        margin: 15px 0px !important;
+      }
+
+      .section5 h2 {
+        font-size: 2rem;
+        padding: 0px;
+      }
+
+      #section5-texto-final {
+        margin: 0px 20px;
+        font-size: 1.8rem;
+        display: block;
+      }
+
+      .section6-container {
+        flex-flow: column wrap;
+      }
+
+      .section6 span{
+        order: 10;
+      }
+      
     .balloon {
         width: 75px;
         height: 75px;
@@ -146,4 +466,51 @@ p {
     footer {
         text-align: center;
     }
+}
+
+@media screen and (min-width: 1276px) and (max-width:1520px) {
+    .texto_principal_header h1 {
+        font-size: 2rem;
+      }
+      
+      .texto_principal_header p {
+        font-size: 1.6rem;
+      }
+      
+      .texto_principal_header a {
+        font-size: 1.2rem;
+      }
+
+      .section2 > p {
+        font-size: 1.8rem;
+      }
+
+      .section2-container p {
+        font-size: 1.6rem;
+      }
+
+      .section2 h3 {
+        font-size: 2rem;
+      }
+
+      .section3 > p {
+        margin: 30px;
+      }
+
+      .section4-container-michele {
+        margin-bottom: 50px;
+      }
+
+      .section4-container-michele, .section4-container-raphaela {
+        flex-flow: column wrap;
+        gap: 50px;
+      }
+
+      .section6-container {
+        flex-flow: row wrap;
+      }
+
+      .section6-container-imagem {
+        order: 10;
+      }
 }
