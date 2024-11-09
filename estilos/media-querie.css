@@ -157,6 +157,11 @@
     height: 450px;
   }
 
+  .section1-texto2 p {
+    font-size: 1.3em !important;
+
+  }
+
   .section1 li {
     line-height: 35px;
   }
@@ -238,6 +243,12 @@
 
   .section5 div {
     width: 350px;
+  }
+
+  .section5 .section5-icon {
+    width: 330px;
+    padding: 0;
+    margin: auto 0;
   }
 
   .section6 {
@@ -348,7 +359,7 @@
   }
 
   footer h3 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   footer p {
